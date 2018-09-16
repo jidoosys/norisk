@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import time
+import random
 from datetime import datetime
-
 
 while True:
     # 
@@ -12,5 +12,8 @@ while True:
     # 
     # シェアお願いします（ネタバレ厳禁）
     # 
+    print( datetime.now().strftime("%Y/%m/%d %H:%M:%S") + ' リスク判定中...')
+    time.sleep(1)
+    print( datetime.now().strftime("%Y/%m/%d %H:%M:%S") + ' リスクレシオ = ' + str(random.randrange(-9,10) /10))
     print( datetime.now().strftime("%Y/%m/%d %H:%M:%S") + ' リスクがあるためスルーします' )
-    time.sleep(5)
+    time.sleep(4)
